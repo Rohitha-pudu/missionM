@@ -91,7 +91,8 @@ export default function Home() {
 
     const createSparkle = (x: number, y: number) => {
       const sparkle = document.createElement("span");
-      sparkle.textContent = "❤️";
+      sparkle.innerHTML = '<span style="color: #FF0000;">&#10084;</span>';
+
       sparkle.style.position = "fixed";
       sparkle.style.left = `${x}px`;
       sparkle.style.top = `${y}px`;
@@ -141,10 +142,10 @@ useEffect(() => {
       "ACCESS GRANTED TO MEMORY VAULT...",
       "INITIALIZING FRIENDSHIP PROTOCOL...",
       "DECODING HIDDEN LAUGHTER SEQUENCES...",
-      "💾 BOOTING CHAOS ENGINE...",
-      "🧠 RETRIEVING SILLY SNAPSHOTS...",
-      "🚀 CONNECTING TO MOUNIKA_MAINFRAME...",
-      "🌈 DEPLOYING BIRTHDAY BLISS MODULE..."
+      "BOOTING CHAOS ENGINE...",
+      "RETRIEVING SILLY SNAPSHOTS...",
+      "CONNECTING TO MOUNIKA_MAINFRAME...",
+      "DEPLOYING BIRTHDAY BLISS MODULE..."
     ];
 
     const interval = setInterval(() => {
@@ -225,14 +226,15 @@ useEffect(() => {
 )}
 
                 <SpecialMessage />
-                <motion.img
-                  src="/hero.jpg"
-                  alt="Her smiling image"
-                  className="w-full rounded-xl shadow-xl border border-green-500"
-                  initial={{ opacity: 0, y: -10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 1 }}
-                />
+              <motion.img
+  src="/pic3.jpg"
+  alt="Her smiling image"
+  className="w-[700px] h-[400px] rounded-xl shadow-xl border border-green-500 object-cover"
+  initial={{ opacity: 0, y: -10 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 1 }}
+/>
+
 
                 <motion.div
                   className="bg-black border border-green-600 text-green-300 rounded-lg p-6 text-center text-lg font-mono shadow-lg"
@@ -247,7 +249,7 @@ useEffect(() => {
  | |___ | |_| |  _ <| |___ 
   \\____| \\___/|_| \\_\\_____|  
 
-Welcome Mounika Mehar 💚 21 Levels of Madness Begin...
+Welcome Mounika Mehar  21 Levels of Madness Begin...
 `}
                   </pre>
                 </motion.div>
@@ -260,7 +262,7 @@ Welcome Mounika Mehar 💚 21 Levels of Madness Begin...
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  🚀 Start Game
+                  Start Game
                 </motion.button>
               </>
             )}

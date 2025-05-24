@@ -24,9 +24,9 @@ export default function MazeGame() {
 
   // Memory messages for each memory point cell (x,y)
   const memoryPoints: Record<string, string> = {
-    "7-1": "Memory 1: Remember our first trip together? 🎒",
-    "4-5": "Memory 2: That epic birthday cake! 🎂",
-    "1-7": "Memory 3: The surprise party we planned! 🎉",
+    "7-1": "Memory 1: Remember our first trip together?",
+    "4-5": "Memory 2: That epic birthday cake!",
+    "1-7": "Memory 3: The surprise party we planned!",
   };
 
   // Handle avatar move with arrow keys
@@ -68,7 +68,7 @@ export default function MazeGame() {
 
   return (
     <div className="maze-game p-4 bg-black text-green-400 font-mono rounded-lg shadow-lg max-w-md h-[600px] flex flex-col">
-      <h2 className="text-center font-bold mb-3">Memory Maze 🎮</h2>
+      <h2 className="text-center font-bold mb-3">Memory Maze</h2>
       <div className="maze-grid grid grid-cols-10 gap-0.5 flex-1 select-none">
         {mazeMap.map((row, y) =>
           row.map((cell, x) => {
@@ -83,7 +83,10 @@ export default function MazeGame() {
                   ${isAvatar ? "bg-green-400 text-black font-bold" : ""}
                 `}
               >
-                {isAvatar ? "😊" : isMemory ? "🎁" : ""}
+                <span>
+  {isAvatar ? '\u{1F60A}' : isMemory ? '\u{1F381}' : '\u2764'}
+</span>
+
               </div>
             );
           })
@@ -93,7 +96,7 @@ export default function MazeGame() {
         <p>Memories collected: {collected.length} / 3</p>
         {collected.length === 3 && (
           <p className="mt-2 font-bold text-yellow-300">
-            🎉 You unlocked the secret surprise! 🎉
+            You unlocked the secret surprise!
           </p>
         )}
       </div>

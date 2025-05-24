@@ -8,15 +8,15 @@ type Riddle = {
 const riddles: Riddle[] = [
   {
     id: 1,
-    question: "I'm not a cake but I have layers. We've both cried here. Where am I?",
+    question: "I amm not a cake but I have layers. We have both cried here. Where am I?",
     answer: "metro",
-    message: "YES! The metro diaries live on 🎉",
+    message: "YES! The metro diaries live on",
   },
   {
     id: 2,
-    question: "My name sounds like spicy, but I’m all about the sauce 🥫",
+    question: "My name sounds like spicy, but I am all about the sauce",
     answer: "chutney",
-    message: "Chutney moham = unlocked. You're on fire 🔥",
+    message: "Chutney moham = unlocked. You are on fire",
   },
 ];
 

@@ -103,7 +103,7 @@ export default function TimelinePopup() {
               Downloading timeline data...
             </motion.span>
           ) : (
-            "🔐 Unlock Timeline"
+            "&#128274; Unlock Timeline"
           )}
         </motion.button>
       )}
@@ -128,7 +128,7 @@ export default function TimelinePopup() {
                   </p>
                   <p className="mb-6 italic text-green-400">
                     "I am the language without words but full of logic.<br />
-                    Without me, your code-a-gift wouldn’t be magic.<br />
+                    Without me, your code-a-gift wouldnt be magic.<br />
                     What am I?"
                   </p>
                   <input
@@ -143,13 +143,13 @@ export default function TimelinePopup() {
                     autoFocus
                   />
                   {error && (
-                    <p className="text-red-600 font-bold mb-2 text-center">❌ Access Denied! Try again.</p>
+                    <p className="text-red-600 font-bold mb-2 text-center"> Access Denied! Try again.</p>
                   )}
                   <button
                     onClick={handleUnlock}
                     className="w-full bg-green-600 text-black py-3 rounded hover:bg-green-700 transition font-bold"
                   >
-                    🔓 Unlock Timeline
+                    Unlock Timeline
                   </button>
                 </>
               )}

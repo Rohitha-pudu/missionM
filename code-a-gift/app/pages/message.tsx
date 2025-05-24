@@ -106,7 +106,7 @@ export default function SpecialMessage() {
               Checking Your Messages Mehar...
             </motion.span>
           ) : (
-            "📬 Special Message Received!"
+            "&#128236; Special Message Received!"
           )}
         </motion.button>
       )}
@@ -126,7 +126,7 @@ export default function SpecialMessage() {
             >
               {!accessGranted && !isDownloading && (
                 <>
-                  <p className="text-lg">🔐 Access to Mounika's birthday message is protected!</p>
+                  <p className="text-lg">&#128274; Access to Mounika's birthday message is protected!</p>
                   <p>Enter 4-digit passcode:</p>
                   <div className="flex justify-center space-x-4">
                     {code.map((digit, i) => (
@@ -151,7 +151,7 @@ export default function SpecialMessage() {
                     onClick={handleSubmit}
                     className="w-full mt-3 bg-green-600 text-black px-4 py-2 rounded hover:bg-green-700 transition"
                   >
-                    ✅ Unlock
+                    &#9989; Unlock
                   </button>
                 </>
               )}
@@ -190,22 +190,22 @@ export default function SpecialMessage() {
                   transition={{ duration: 1.5, ease: "easeInOut" }}
                   className="text-green-400 text-sm whitespace-pre-line leading-relaxed"
                 >
-                  <p className="text-lg font-bold mb-2">🎉 Message Unlocked!</p>
+                  <p className="text-lg font-bold mb-2">Message Unlocked!</p>
                   <p>
-                    Hey Mounika Mehar 💚
+                    Hey Mounika Mehar 
 
-                    You’re honestly one of the most dedicated and genuine people I’ve met—whether it’s your commitment to studies or your energy during a shopping spree 😄
+                    You’re honestly one of the most dedicated and genuine people Ive met—whether its your commitment to studies or your energy during a shopping spree 
 
-                    You give your best in everything you do. You don’t give up, you adapt, and you handle chaos like a calm, stylish terminal warrior 😎
+                    You give your best in everything you do. You dont give up, you adapt, and you handle chaos like a calm, stylish terminal warrior 
 
-                    Sure... sometimes you go full-on overaction mode 💃 but I wouldn’t have it any other way. Your vibe, your laugh, your presence—it’s a big reason these months were full of amazing memories.
+                    Sure... sometimes you go full-on overaction mode  but I wouldnt have it any other way. Your vibe, your laugh, your presence—its a big reason these months were full of amazing memories.
 
-                    You’re truly special. And today, on your 21st, I just want to say:
+                    You re truly special. And today, on your 21st, I just want to say:
                     **Thank you for being YOU.**
 
-                    Happy Birthday, coder queen 💻✨
+                    Happy Birthday, coder queen 
 
-                    From the chaotic debugger in your life 💚
+                    From the chaotic debugger in your life 
                   </p>
                 </motion.div>
               )}
